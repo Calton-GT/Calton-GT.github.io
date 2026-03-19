@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КиноВизор - Визуализация информационных процессов деятельности киностудии</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="5" width="26" height="22" rx="3" fill="white" stroke="white" stroke-width="1"/>
+                    <rect x="3" y="6" width="5" height="5" rx="0.3" fill="#1a237e"/>
+                    <rect x="3" y="13" width="5" height="5" rx="0.3" fill="#1a237e"/>
+                    <rect x="3" y="20" width="5" height="5" rx="0.3" fill="#1a237e"/>
+                    <rect x="11" y="9" width="10" height="5" rx="1.5" fill="#1a237e"/>
+                    <rect x="11" y="16" width="10" height="5" rx="1.5" fill="#1a237e"/>
+                    <rect x="24" y="6" width="5" height="5" rx="0.3" fill="#1a237e"/>
+                    <rect x="24" y="13" width="5" height="5" rx="0.3" fill="#1a237e"/>
+                    <rect x="24" y="20" width="5" height="5" rx="0.3" fill="#1a237e"/>
+                </svg>
+                КиноВизор
+            </a>
+            <button class="navbar-toggler" type="button" id="navbarToggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">О проекте</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Преимущества</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">Как работает</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Тарифы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#" id="demoModalBtn">Демо-доступ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Первый экран -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="display-4 mb-4">Визуализация информационных процессов деятельности киностудии</h1>
+                    <p class="lead mb-4">Инновационное программное обеспечение для управления и визуализации всех аспектов кинопроизводства. Повышайте эффективность, сокращайте сроки и оптимизируйте бюджеты ваших проектов.</p>
+                    <div class="btn-group">
+                        <a href="#pricing" class="btn btn-primary btn-lg">Начать использовать</a>
+                        <a href="#features" class="btn btn-outline-light btn-lg">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1489599809505-fc6acc43c71f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Управление кинопроизводством" class="img-fluid hero-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О проекте -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <h2 class="section-title">О проекте</h2>
+                    <p class="mb-4">КиноВизор - это комплексное решение для автоматизации и визуализации информационных процессов на киностудии. Наша система позволяет отслеживать все этапы кинопроизводства от пре-продакшена до пост-продакшена в едином информационном пространстве.</p>
+                    <p class="mb-4">С помощью интуитивно понятных дашбордов и аналитических инструментов вы получаете полный контроль над проектами, ресурсами, бюджетами и сроками. Это позволяет принимать обоснованные управленческие решения и повышать эффективность работы киностудии.</p>
+                    <div class="stats-group">
+                        <div class="stat-item">
+                            <h3 class="fw-bold text-primary">150+</h3>
+                            <p>Киностудий используют наше решение</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="fw-bold text-primary">5 лет</h3>
+                            <p>Успешной работы на рынке</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="fw-bold text-primary">24/7</h3>
+                            <p>Техническая поддержка</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>
+                                </div>
+                                <h4>Аналитика в реальном времени</h4>
+                                <p>Мониторинг ключевых показателей эффективности проекта с возможностью глубокой аналитики.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                                </div>
+                                <h4>Управление задачами</h4>
+                                <p>Планирование, распределение и контроль выполнения задач по всем отделам киностудии.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+                                </div>
+                                <h4>Бюджетирование</h4>
+                                <p>Детальное планирование бюджета, отслеживание расходов и прогнозирование затрат.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                                </div>
+                                <h4>Командная работа</h4>
+                                <p>Совместная работа над проектами с возможностью контроля доступа для разных ролей.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Преимущества</h2>
+            <p class="text-center mb-5">Почему более 150 киностудий выбрали КиноВизор для управления своими проектами</p>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M11 2v20c-5.07-.5-9-4.79-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.97-8.99h-8.97z"/></svg>
+                        </div>
+                        <h4>Визуализация данных</h4>
+                        <p>Интуитивно понятные дашборды и отчеты, которые позволяют быстро оценить состояние проекта и принять правильные решения.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        </div>
+                        <h4>Экономия времени</h4>
+                        <p>Автоматизация рутинных процессов и централизация информации сокращают время на управление проектами до 40%.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+                        </div>
+                        <h4>Контроль бюджета</h4>
+                        <p>Детальный учет расходов, прогнозирование затрат и автоматическое оповещение о превышении бюджета.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+                        </div>
+                        <h4>Планирование</h4>
+                        <p>Гибкое планирование съемок, монтажа и других этапов производства с учетом доступности ресурсов.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/></svg>
+                        </div>
+                        <h4>Централизованное хранение</h4>
+                        <p>Все данные о проектах, сценариях, контактах и ресурсах хранятся в единой системе с контролем доступа.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+                        </div>
+                        <h4>Мобильность</h4>
+                        <p>Доступ к системе с любых устройств в любое время, что особенно важно при работе на съемочной площадке.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сценарии использования и выгода -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Сценарии использования</h2>
+            <p class="text-center mb-5">Как КиноВизор помогает в различных аспектах кинопроизводства</p>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="use-case-item">
+                        <div class="use-case-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        </div>
+                        <div class="use-case-content">
+                            <h4>Пре-продакшен</h4>
+                            <p>Планирование бюджета, подбор актеров и съемочной группы, составление расписания съемок, локационный скouting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="use-case-item">
+                        <div class="use-case-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/></svg>
+                        </div>
+                        <div class="use-case-content">
+                            <h4>Продакшен</h4>
+                            <p>Управление съемочным процессом, контроль расходов, отслеживание прогресса, коммуникация между отделами.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="use-case-item">
+                        <div class="use-case-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+                        </div>
+                        <div class="use-case-content">
+                            <h4>Пост-продакшен</h4>
+                            <p>Координация работы монтажеров, визуальных эффектов, звукорежиссеров, цветокоррекции и титрования.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="use-case-item">
+                        <div class="use-case-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"/></svg>
+                        </div>
+                        <div class="use-case-content">
+                            <h4>Аналитика и отчетность</h4>
+                            <p>Формирование отчетов для инвесторов, анализ эффективности проектов, планирование будущих производств.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="benefit-box">
+                        <h3 class="mb-3">Ключевая выгода</h3>
+                        <p class="lead mb-0">Средняя экономия времени на управление проектами составляет 35%, а сокращение перерасхода бюджета - до 22% благодаря использованию КиноВизор.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как это работает -->
+    <section id="how-it-works" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Как работает КиноВизор</h2>
+            <p class="text-center mb-5">4 простых шага к эффективному управлению кинопроизводством</p>
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h4>1. Настройка проекта</h4>
+                        <p>Создайте новый проект, определите основные параметры: бюджет, сроки, команду. Импортируйте сценарий для автоматического анализа и планирования.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h4>2. Планирование</h4>
+                        <p>Система автоматически создаст план съемок с учетом доступности ресурсов, локаций и актеров. Вы можете вносить коррективы в автоматически сгенерированный план.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h4>3. Исполнение</h4>
+                        <p>Отслеживайте прогресс в реальном времени, вносите изменения в расписание, управляйте задачами команды и контролируйте бюджет.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h4>4. Анализ и отчетность</h4>
+                        <p>Получайте детальные отчеты о проекте, анализируйте эффективность, извлекайте уроки для будущих проектов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Тарифы и цены -->
+    <section id="pricing" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Тарифные планы</h2>
+            <p class="text-center mb-5">Выберите подходящий вариант для вашей киностудии</p>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="pricing-card">
+                        <h3>Стартовый</h3>
+                        <p>Для небольших киностудий и независимых проектов</p>
+                        <div class="price">15 000 ₽<span class="text-muted">/месяц</span></div>
+                        <ul class="pricing-list">
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> До 3 одновременных проектов</li>
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Базовые дашборды и отчеты</li>
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Управление бюджетом</li>
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Планирование съемок</li>
+                            <li><svg class="icon-times" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg> Интеграция с бухгалтерскими системами</li>
+                            <li><svg class="icon-times" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg> Кастомные отчеты</li>
+                            <li><svg class="icon-times" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg> API доступ</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary w-100" id="demoModalBtn2">Выбрать тариф</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="pricing-card featured">
+                        <h3>Профессиональный</h3>
+                        <p>Для средних киностудий с несколькими проектами</p>
+                        <div class="price">35 000 ₽<span class="text-muted">/месяц</span></div>
+                        <ul class="pricing-list">
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> До 10 одновременных проектов</li>
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Расширенные дашборды и отчеты</li>
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Детальное управление бюджетом</li>
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Автоматическое планирование съемок</li>
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Интеграция с бухгалтерскими системами</li>
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Кастомные отчеты</li>
+                            <li><svg class="icon-times" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg> API доступ</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary w-100" id="demoModalBtn3">Выбрать тариф</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="pricing-card">
+                        <h3>Корпоративный</h3>
+                        <p>Для крупных киностудий и продюсерских центров</p>
+                        <div class="price">65 000 ₽<span class="text-muted">/месяц</span></div>
+                        <ul class="pricing-list">
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Неограниченное количество проектов</li>
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Персональные дашборды и отчеты</li>
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Продвинутое управление бюджетом</li>
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> AI-планирование съемок</li>
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Полная интеграция с системами учета</li>
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Расширенные кастомные отчеты</li>
+                            <li><svg class="icon-check" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Полный API доступ</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary w-100" id="demoModalBtn4">Выбрать тариф</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <p class="text-muted">Все тарифы включают бесплатную техническую поддержку и обучение. Есть возможность индивидуальной настройки под ваши потребности.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Призыв к действию -->
+    <section class="py-5 text-white" style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-3">Готовы оптимизировать процессы вашей киностудии?</h2>
+                    <p class="lead mb-0">Начните использовать КиноВизор уже сегодня и получите 14 дней бесплатного тестирования</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#" class="btn btn-light btn-lg" id="demoModalBtn5">Получить демо-доступ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Отзывы наших клиентов</h2>
+            <p class="text-center mb-5">Что говорят киностудии, которые уже используют КиноВизор</p>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://via.placeholder.com/60/3949ab/ffffff?text=СИ" alt="Сергей Иванов" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">Сергей Иванов</h5>
+                                <p class="text-muted mb-0">Директор, "Киностудия Восток"</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">"С внедрением КиноВизор мы смогли сократить время на планирование проектов на 40%. Теперь мы видим всю картину производства в реальном времени и можем оперативно реагировать на изменения."</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://via.placeholder.com/60/3949ab/ffffff?text=АП" alt="Анна Петрова" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">Анна Петрова</h5>
+                                <p class="text-muted mb-0">Продюсер, "АртФильм"</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">"Система помогла нам значительно улучшить контроль бюджета. Благодаря автоматическим оповещениям о превышении затрат мы смогли сократить перерасход средств на 25%."</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://via.placeholder.com/60/3949ab/ffffff?text=ДС" alt="Дмитрий Сидоров" class="testimonial-avatar">
+                            <div>
+                                <h5 class="mb-0">Дмитрий Сидоров</h5>
+                                <p class="text-muted mb-0">Линейный продюсер, "СинемаПро"</p>
+                            </div>
+                        </div>
+                        <p class="mb-0">"Особенно ценю мобильность системы. На съемочной площадке я могу оперативно вносить изменения в расписание и сразу видеть, как это повлияет на общий график и бюджет проекта."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Часто задаваемые вопросы -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Часто задаваемые вопросы</h2>
+            <p class="text-center mb-5">Ответы на самые популярные вопросы о КиноВизор</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Как быстро можно внедрить систему на киностудии?</span>
+                            <svg class="icon-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Стандартное внедрение занимает от 2 до 4 недель в зависимости от размера киностудии и сложности процессов. Мы предоставляем полное сопровождение на всех этапах внедрения.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Можно ли интегрировать КиноВизор с другими системами?</span>
+                            <svg class="icon-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, система поддерживает интеграцию с популярными бухгалтерскими программами, системами кадрового учета и другими специализированными решениями через API.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Предоставляете ли вы обучение для сотрудников?</span>
+                            <svg class="icon-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, мы проводим бесплатное обучение для всех сотрудников киностудии. Обучение может проходить как очно, так и в онлайн-формате, в зависимости от ваших предпочтений.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Есть ли мобильное приложение?</span>
+                            <svg class="icon-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, мы предлагаем мобильные приложения для iOS и Android с основным функционалом системы, что особенно удобно для работы на съемочной площадке.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Как обеспечивается безопасность данных?</span>
+                            <svg class="icon-chevron" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Мы используем современные методы шифрования данных, регулярно проводим аудиты безопасности и соответствуем международным стандартам защиты информации.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Контакты</h2>
+            <p class="text-center mb-5">Свяжитесь с нами для получения дополнительной информации</p>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Контактная информация</h4>
+                        
+                        <div class="contact-item">
+                            <div>
+                                <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            </div>
+                            <div>
+                                <h5>Адрес</h5>
+                                <p>г. Москва, ул. Киностудийная, д. 15</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div>
+                                <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            </div>
+                            <div>
+                                <h5>Телефон</h5>
+                                <p>+7 (495) 123-45-67</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div>
+                                <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </div>
+                            <div>
+                                <h5>Email</h5>
+                                <p>info@kinovizor.ru</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div>
+                                <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                            </div>
+                            <div>
+                                <h5>Режим работы</h5>
+                                <p>Пн-Пт: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8">
+                    <div class="contact-form-wrapper">
+                        <h4 class="mb-4">Оставьте заявку</h4>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Ваше имя" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Тема">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Сообщение" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h4 class="mb-4">
+                        <svg class="logo-icon" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="5" width="26" height="22" rx="3" fill="white" stroke="white" stroke-width="1"/>
+                            <rect x="3" y="6" width="5" height="5" rx="0.3" fill="#1a237e"/>
+                            <rect x="3" y="13" width="5" height="5" rx="0.3" fill="#1a237e"/>
+                            <rect x="3" y="20" width="5" height="5" rx="0.3" fill="#1a237e"/>
+                            <rect x="11" y="9" width="10" height="5" rx="1.5" fill="#1a237e"/>
+                            <rect x="11" y="16" width="10" height="5" rx="1.5" fill="#1a237e"/>
+                            <rect x="24" y="6" width="5" height="5" rx="0.3" fill="#1a237e"/>
+                            <rect x="24" y="13" width="5" height="5" rx="0.3" fill="#1a237e"/>
+                            <rect x="24" y="20" width="5" height="5" rx="0.3" fill="#1a237e"/>
+                        </svg>
+                        КиноВизор
+                    </h4>
+                    <p>Программное обеспечение для визуализации и управления информационными процессами деятельности киностудии.</p>
+                    <div class="social-links mt-4">
+                        <a href="https://t.me/kinovizor" target="_blank" title="Наш Telegram канал">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="mb-4">Навигация</h5>
+                    <ul class="footer-links">
+                        <li><a href="#about">О проекте</a></li>
+                        <li><a href="#features">Преимущества</a></li>
+                        <li><a href="#how-it-works">Как работает</a></li>
+                        <li><a href="#pricing">Тарифы</a></li>
+                        <li><a href="#testimonials">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-4">Ресурсы</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">Поддержка</a></li>
+                        <li><a href="#">ЧаВо</a></li>
+                        <li><a href="#">Партнерская программа</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-4">Подписка</h5>
+                    <p>Подпишитесь на нашу рассылку, чтобы получать новости и обновления</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Ваш email">
+                            <button class="btn btn-primary" type="button">Подписаться</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">© 2025 КиноВизор. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                    <a href="#" class="footer-link">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <div class="back-to-top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </div>
+
+    <!-- Модальное окно для демо-доступа -->
+    <div class="modal" id="demoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Запрос демо-доступа</h5>
+                    <button type="button" class="btn-close" id="modalClose"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Заполните форму ниже, и наш менеджер свяжется с вами для предоставления демо-доступа к системе КиноВизор.</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Телефон" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Название киностудии">
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option selected>Выберите тариф</option>
+                                <option value="1">Стартовый</option>
+                                <option value="2">Профессиональный</option>
+                                <option value="3">Корпоративный</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Комментарий"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="modalClose2">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Отправить запрос</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
